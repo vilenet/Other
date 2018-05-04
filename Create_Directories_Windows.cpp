@@ -1,16 +1,4 @@
-/*Задание №2
-
-    Написать консольное приложение, которое создает заданную структуру каталогов.
-    Например, на вход задается строка вида
-    "C:\Documents and Settiings\Administrator\Application Data\My Company\My Software\Settings".
-    Программа должна создать этот каталог, включая все недостающие более высокого уровня.
-
-  Условия:
-    1) Предпочтительная целевая платформа - Windows
-    2) Разрешено использовать только стандартную библиотеку C/C++ и функции WinAPI.
-
-  Решение:                                                                       */
-
+                                                                      */
 #include <iostream>
 #include <windows.h>
 
@@ -64,7 +52,7 @@ BOOL createDirectory(const char *Path, LPSECURITY_ATTRIBUTES LP_AT)
 
 int main()
 {
-    char str[] = "C:\\Documents and Settiings\\Administrator\\Application Data\\My Company\\My Software\\Settings\\";
+    char str[] = "C:\\MyDocuments\\NewDocuments\\Data\\Home\\Source\\hello world\\";
     if(!createDirectory( str, NULL ))
         std::cout<<"failed\n";
     else
